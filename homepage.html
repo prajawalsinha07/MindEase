@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apigClient.js"></script>
+    <script type="text/javascript" src="awsjsscript.js"></script>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="css/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+        <li class="logout"><a href="https://mindease.auth.us-east-1.amazoncognito.com/logout?client_id=6uefhaepf9ia0cpg8ci6qu4igl&logout_uri=http%3A%2F%2Flocalhost%3A8000%2Flogged_out.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 class="mood-heading">How are You Feeling Today?</h2>
+    <div class="mood-form"">
+      <form>
+        <div class="mood-text">
+          <input type="text" id="mood-text-box" name="mood-text-box" placeholder="Enter here:" required>
+        </div>
+        <div class="time-input">
+      <label for="time-input-box">How many hours have you slept today?</label>
+      <input type="time" id="time-input-box" name="time-input-box" required>
+    </div>
+        <button type="submit" class="submit-btn" onclick="submitResponse()">Submit</button>
+      </form>
+    </div>
+
+    <div id="response-text" class="response-text"></div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <a href="moodtracker.html">
+          <img src="css/moodtracker.png" alt="Image 1">
+        </a>
+      </div>
+    <div class="grid-item">
+        <a href="recommendations.html">
+          <img src="css/recommendations.png" alt="Image 1">
+        </a>
+      </div>
+    <div class="grid-item">
+        <a href="therapists.html">
+          <img src="css/therapist.png" alt="Image 1">
+        </a>
+      </div>
+    <div class="grid-item">
+        <a href="http://localhost:8000/medical_records.html">
+          <img src="css/medical_records.png" alt="Image 1">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

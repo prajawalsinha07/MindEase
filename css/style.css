@@ -1,0 +1,390 @@
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading img {
+  max-width: 450px;
+  max-height: 450px;
+}
+.logo {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+.logout {
+  margin-top: -2rem;
+  margin-left: auto;
+}
+
+.logout a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.logout a:hover {
+  background-color: #990000;
+}
+
+.home-btn{
+  margin-top: -30px;
+  margin-right: 10px;
+}
+
+li.home-btn img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 25%);
+  grid-gap: 1rem;
+  margin-left: 400px;
+  margin-top: 150px;
+  max-width: 600px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* width: 200px;
+  height:200px; */
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-item h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.mood-heading {
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.mood-form {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mood-text {
+	margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	width: 100%;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+	outline: none;
+	border-color: #7f5a83;
+}
+
+label {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.submit-btn {
+	background-color: #7f5a83;
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #944e75;
+}
+
+.time-input {
+  margin-bottom: 20px;
+}
+
+input[type="time"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+}
+
+input[type="time"]:focus {
+  outline: none;
+  border-color: #7f5a83;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.main-heading {
+  margin-top: -25px;
+}
+
+.therapistRow1 {
+  position: absolute;
+  top: 110px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow2 {
+  position: absolute;
+  top: 110px;
+  left: 320px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow3 {
+  position: absolute;
+  top: 110px;
+  left: 590px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow4 {
+  position: absolute;
+  top: 110px;
+  left: 860px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow5 {
+  position: absolute;
+  top: 490px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow6 {
+  position: absolute;
+  top: 490px;
+  left: 320px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow7 {
+  position: absolute;
+  top: 490px;
+  left: 590px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow8 {
+  position: absolute;
+  top: 490px;
+  left: 860px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow9 {
+  position: absolute;
+  top: 870px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow10 {
+  position: absolute;
+  top: 870px;
+  left: 320px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow11 {
+  position: absolute;
+  top: 870px;
+  left: 590px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.therapistRow12 {
+  position: absolute;
+  top: 870px;
+  left: 860px;
+  width: 200px;
+  height: 200px;
+  /* background-color: grey; */
+}
+
+.formHeading {
+  text-align: center;
+}
+
+.formTherapy {
+  position: absolute;
+  left: 1100px;
+  right: 10px;
+  top: 150px;
+  bottom: -200px;
+  margin-top: -50px; 
+  background-color: lightgray;
+}
+
+.name-heading,
+.email-heading,
+.gender-heading,
+.dob-heading,
+.PhoneNumber-heading,
+.appointment-heading,
+.therapist-heading {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.name-form,
+.email-form,
+.gender-form,
+.dob-form,
+.PhoneNumber-form,
+.appointment-form,
+.therapist-form {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  width: 200px;
+}
+
+.submit-btnTherapy {
+  margin-left: 120px;
+  width: 200px;
+  background-color: #7f5a83;
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit-btnTherapy:hover {
+	background-color: #944e75;
+}
+
+.therapist-list p{
+  font-size: 16;
+  font-family: Calibri;
+  padding-top: -45px;
+}
+
+.therapist-list h2{
+  font-family: Calibri;
+  padding-top: 5px;
+}
+
+.graph-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.graph {
+  flex-basis: calc(50% - 10px);
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.response-text {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #555;
+  background-color: #f8f8f8;
+  text-align: center;
+}

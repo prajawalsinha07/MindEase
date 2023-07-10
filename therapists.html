@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apigClient.js"></script>
+    <script type="text/javascript" src="awsjsscript.js"></script>
+    <title>Therapists Page</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onload="therapistOnLoad()">
+    <header>
+      <div class="logo">
+        <img src="css/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+        <li class="home-btn"><a href="homepage.html"><img src="css/home.png" alt="Home Button"></a></li>
+        <li class="logout"><a href="https://mindease.auth.us-east-1.amazoncognito.com/logout?client_id=6uefhaepf9ia0cpg8ci6qu4igl&logout_uri=http%3A%2F%2Flocalhost%3A8000%2Flogged_out.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class = "main-heading" style="text-align:center">With our selection of skilled therapists, you're sure to find the perfect match for you.</h1>
+      <section class="therapist-list">
+        <div class="row">
+          <div class="therapistRow1">
+            <img src="css/therapist1.png" alt="Therapist 1">
+            <h2>Therapist Name 1</h2>
+            <p>Details about Therapist 1.</p>
+          </div>
+          <div class="therapistRow2">
+            <img src="css/therapist2.png" alt="Therapist 2">
+            <h2>Therapist Name 2</h2>
+            <p>Details about Therapist 2.</p>
+          </div>
+          <div class="therapistRow3">
+            <img src="css/therapist3.png" alt="Therapist 3">
+            <h2>Therapist Name 3</h2>
+            <p>Details about Therapist 3.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="therapistRow4">
+            <img src="css/therapist4.png" alt="Therapist 4">
+            <h2>Therapist Name 4</h2>
+            <p>Details about Therapist 4.</p>
+          </div>
+          <div class="therapistRow5">
+            <img src="css/therapist5.png" alt="Therapist 5">
+            <h2>Therapist Name 5</h2>
+            <p>Details about Therapist 5.</p>
+          </div>
+          <div class="therapistRow6">
+            <img src="css/therapist6.png" alt="Therapist 6">
+            <h2>Therapist Name 6</h2>
+            <p>Details about Therapist 6.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="therapistRow7">
+            <img src="css/therapist7.png" alt="Therapist 7">
+            <h2>Therapist Name 7</h2>
+            <p>Details about Therapist 7.</p>
+          </div>
+          <div class="therapistRow8">
+            <img src="css/therapist8.png" alt="Therapist 8">
+            <h2>Therapist Name 8</h2>
+            <p>Details about Therapist 8.</p>
+          </div>
+          <div class="therapistRow9">
+            <img src="css/therapist9.png" alt="Therapist 9">
+            <h2>Therapist Name 9</h2>
+            <p>Details about Therapist 9.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="therapistRow10">
+            <img src="css/therapist10.png" alt="Therapist 10">
+            <h2>Therapist Name 10</h2>
+            <p>Details about Therapist 10.</p>
+          </div>
+          <div class="therapistRow11">
+            <img src="css/therapist11.png" alt="Therapist 11">
+            <h2>Therapist Name 11</h2>
+            <p>Details about Therapist 11.</p>
+          </div>
+          <div class="therapistRow12">
+            <img src="css/therapist12.png" alt="Therapist 12">
+            <h2>Therapist Name 12</h2>
+            <p>Details about Therapist 12.</p>
+          </div>
+        </div>
+      </section>
+      <main>
+        <form class="formTherapy">
+          <h1 class = "formHeading">Please fill out this form</h2>
+            <h2 class="name-heading">Name</h2>
+            <div class="name-form">
+              <input type="name" id="name-text-box" name="name-text-box" placeholder="Enter here:" required>
+            </div>
+            <h2 class="email-heading">Email-Id</h2>
+            <div class="email-form">
+              <input type="email" id="email-text-box" name="email-text-box" placeholder="Enter here:" required>
+            </div>
+            <h2 class="gender-heading">Gender</h2>
+            <div class="gender-form">
+              <input type="gender" id="gender-text-box" name="gender-text-box" placeholder="Enter here:" required>
+            </div>
+            <h2 class="dob-heading">Date Of Birth</h2>
+            <div class="dob-form">
+              <input type="date" id="dob-text-box" name="dob-text-box" placeholder="Enter here:" required>
+            </div>
+            <h2 class="PhoneNumber-heading">Phone Number</h2>
+            <div class="PhoneNumber-form">
+              <input type="phoneNumber" id="PhoneNumber-text-box" name="PhoneNumber-text-box" placeholder="Enter here:" required>
+            </div>
+            <h2 class="appointment-heading">Appointment Time</h2>
+            <div class="appointment-form">
+              <input type="datetime-local" id="appointment-text-box" name="appointment-text-box" placeholder="Enter here:" required>
+            </div>
+            <h2 class="therapist-heading">Select Therapist</h2>
+            <div class="therapist-form">
+              <select id="therapist-select" name="therapist-select" required>
+                <option value="">Select an option</option>
+                <option value="option1">Elisa Peimer</option>
+                <option value="option2">Amy Bender</option>
+                <option value="option3">Celestine David</option>
+                <option value="option4">Monika Paulus</option>
+                <option value="option5">Farah Delicia</option>
+                <option value="option6">Alison Carr</option>
+                <option value="option7">Caitlin Morrison</option>
+                <option value="option8">Jesse Gross</option>
+                <option value="option9">Joelle Chorny</option>
+                <option value="option10">Georgette Maidiotis</option>
+                <option value="option11">Fraidy Shagalov</option>
+                <option value="option12">Patty O Leary</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btnTherapy" onclick="submitTherapistResponse()">Submit</button>
+        </form>
+      </main>      
+    
+  </body>
+</html>
