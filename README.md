@@ -1,3 +1,5 @@
+#Description
+MindEase supports students to fight against anxiety and loneliness by tracking their mood throughout. We incorporated personalised diary entry which leverages NLP under the hood to process mood of an individual and how he/she felt about the day. We come up with personalised suggestions based on this output.
 # Prerequisites
 For the JavaScript SDK to work your APIs need to support CORS. The Amazon API Gateway developer guide explains how to [setup CORS for an endpoint]().
 The generated SDK depends on third-party libraries. Include all of the scripts in your webpage
